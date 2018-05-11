@@ -1,0 +1,40 @@
+What is a computer, Part 1?
+
+Many people nowadays use computers but very few people know what computers are. A computer is a very simple device, although its design is very complicated. Yes, a computer's job is very simple. The computer works using a simple mechanism. What makes computers seem complicated is the complexity of the design and engineering required to achieve this simplicity.
+
+A computer is defined as an electronic device that works under the control of stored programs. A computer can accept data (input), process it (process), and produce results (output)
+
+If you find the following sections difficult to understand, im working on an easier article on "What is a computer", but I hope you can understand it. If you cant please indicate by posting questions and commenting.
+
+Anyway, I believe you must have seen an electric bulb or florescent. A bulb responds to electricity by generating light and heat.. The required output of a bulb is light. The input is electricity. If we were to reduce the amount of electricity (voltage), we would notice the bulb's light dimming bit by bit until it goes off completely. If we increase electric voltage, the bulb also becomes brighter, and if this is done in excess, the wires inside the bulb will break, and the bulb will not be able to produce any light. Bulbs are designed differently but what causes a typical bulb to glow is the wire inside the bulb which is made from electrically resistant material. Movement of electricity results in heat but in insignificant amounts. When electricity is passed through a resistor, it produces more heat. The heat produced causes the resistive wire to glow therefore bringing light.
+
+A computer is a simple device designed to: respond to, accept, interpret and also transmit electric signals. What a computer does is determined by the electronic signals it receives. A computer is in this regard like a bulb which responds to electricity. A bulb responds differently according to the amount of electricity. A computer also acts differently according to the electronic signals it receives. The difference is that a bulb's functionality is limited while a computer has wide variety of functions.
+
+A computer is designed to behave differently for every different electronic signals it receives. Unlike a bulb, a computer can not accept a wide range of voltages for the sake of simplicity. A computer is therefore designed to accept two levels of electronic voltages. A typical 0 volts represents one state, and a 5 volts represent another state. These 2 states can be represented using numbers as, 0 volts = OFF, 5v = ON. These states can be used to also represent, FALSE and TRUE, YES and NO, 0 and 1 etc.
+
+It seems cumbersome for a computer to use 2 states to hold information in the form of signals, this is actually the simplest design. We have been trained in this convention of using few elements to represent numerous quantities. Consider our counting system. We will touch on it (in detail) in a separate topic. We use only 10 digits to represent numbers even, quadrillions. How we count is a run from 0,1,2,3,4,5,6,7,8,9, from 9 we go on to 10. If we look at 10, it is a different number, but the digits have been used before. Instead of worrying about how many digits we use for counting, we can combine the digits, with a phenomenon I would like to call 'place significance'. The number's value is not only determined by the digits in it, but also by where the digits are placed. If we have a number 9990, it has a value greater than 999, because of the places which the digits occupy. If a digit sits to the right, it has a potential value greater than a number which sits to the left. The digit '1' in 199 possesses a higher potential value than both 9's in the same number.
+I am using the term potential value, because we also have a number zero which can sit on a place to the right - the potential value maybe great, its real value will always be nothing. Nothingness has its importance because it can also be used as place-holders.
+
+Computers use the same convention to represent numbers and information. We already saw that an electronic signal inside a computer can have 2 states, either 0 volts or 5 volts. These signal levels can be used to represent a number 0 or 1. That is all we have, we have no 2 or 3 or 9, but that's OK. Using these numbers, we can use the two digits (0 and 1) to construct higher value numbers simply by shifting places of significance, which rise as we move to the right. A computer can easily count from 0 to 1, but from 1 where does it go? It goes to 10 then 11, then again 100. Comparing our counting system and the way a computer counts, here is the equivalence
+
+Human...Computer
+
+0.............0
+1.............1
+2.............10
+3.............11
+4.............100
+5.............101
+6.............110
+7.............111
+8.............1000
+9.............1001
+10...........1010
+
+Try to make sense out of this to relate how differently computers count from humans. This is the basis of numbering systems which we will look at in future articles. Please comment, like, share and ask questions
+
+If you need a clarification of anything in this post please let us know..
+
+Check this space for part 2...
+
+Gore rino muchadzidza zvakawanda!!!
