@@ -1,0 +1,104 @@
+What is a computer Part 2
+======================
+
+*Please feel free to post reviews of these posts. If they are too difficult to understand, help us to make it easy for you and everyone else.
+*Also note that the symbol '^' is used to express powers. 10^4 is 10 to the power of 4 which is 10000.
+
+We saw in part one that computers only understand two kinds of signals. The first signal can be represented by a 0 volt pulse while the other can be represented by a 5 volt pulse. These voltage levels are arbitrary values not absolutes for the sake of simplicity. In reality, a computer understands two kinds of signals, and it can differentiate between the two. The voltage of the two different signals is determined by the engineers who make the computer. One signal can be 0.5volts and another can be 3.3volts. The amount of volts needed for signals also determines the amount of power the computer consumes so signals can have even lower voltages. The signal voltages have some degree of tolerance. Tolerance is the amount of excess or short that the system can handle without misbehaving or losing the meaning of the signal. If a signal is represented by a 5.5v but has a plus or minus 1 volt tolerance, that signal can still be represented by 4.5 volts and even 6.5 volts. These signal voltage levels and tolerance values are determined by the maker of the computer equipment. The most important thing to know about signals is that, eventually a computer must be able to differentiate the two signal types, one from another, whether their voltage differences are very tiny or very big. The reason for using two voltage levels is simply to distinguish an ON signal from an OFF signal(you can call it 1 and 0 or TRUE and FALSE if you wish).
+
+In order to avoid computer equipment incompatibilities, all standard devices have some form of specification which states how signals are transmitted and their voltage and tolerance levels.
+
+In case you are wondering how a computer can do many things yet it understands just 2 signals. Here is why. Consider the alphabet. It has 26 letters but we can express many things under the sun using just 26 letters. It is simply a matter of how you combine them. Even when the alphabetic characters construct words, the combination of the words and placement determines the meaning. For example, saying "Is he at home" and saying "He is at home" doesn't have the same meaning even though the exact same words are used in both instances, just different arrangement of words. The same applies to our number system which uses 10 digits (0,1,2,3,4,5,6,7,8,9) - you can combine them to represent very large numbers up to even Quadrillions(10^15), septillions(10^24) or even centillion (10^303). If we can represent large magnitudes with just 10 digits by using different combinations, we can simply do the same just by using 2 digits which the computer can accept or transmit in the form of signals.
+
+We saw that the first signal is normally used to represent a logic value which can be interpreted as OFF, FALSE, NEGATIVE, 0 etc while the other value can be used to represent a value like ON, TRUE, NEGATIVE or 1. In order for a computer to be used to represent many things, primarily numbers, the two kinds of signals (ON and OFF or 0 and 1) are used but they are grouped and combined differently to create many possibilities for what we want the computer to represent. We just mentioned that the other signal can represent 0 while the other can represent 1. This is enough foundation to use computers to represent numbers or anything for that matter. We can group signals, and interpret that group of signals as a single entity. For example, if we want to represent letters of the alphabet, we can group signals coming from a computer in 5s so that 5 signals are treated as a character, we can come up with the following signals for each alphabetic character:
+
+Computer..........Alphabet
+
+00000.............A
+00001.............B
+00010.............C
+00011.............D
+00100.............E
+00101.............F
+00110.............G
+00111.............H
+01000.............I
+01001.............J
+01010.............K
+01011.............L
+01100.............M
+01101.............N
+01110.............O
+01111.............P
+10000.............Q
+10001.............R
+10010.............S
+10011.............T
+10100.............U
+10101.............V
+10110.............W
+10111.............X
+11000.............Y
+11001.............Z
+
+In order for a computer to send the letters HELLO, it will need to generate the following computer signals: 00111,00100,01011,01011,01110. More about this later.
+
+Our normal, counting system which we call the "decimal system" or base 10 uses 10 digits to represent numbers even of very high magnitudes. The digits used are 0,1,2,3,4,5,6,7,8 and 9. After nine, we start reusing the digits from 10 forward and to represent higher values, we use decimal places to increase the power of a digit.
+
+Any number system in which a digit's value is determined by its position is called a "positional number system". The decimal system is an example of a positional number system. The '1' in 100 is different from the '1' in 1000 because the first '1' represents hundreds, while the second represent thousands.
+There are other number systems which are non-positional, like the roman numeral system. XXI in roman numerals is 21, so 'X' doesn't assume a higher value because of position. The two 'X's have the same value even though they are at different places.II in roman numerals equals to two, yet 11 in the decimal system is not two, but eleven. This is because in the decimal system, a digit's position determines its value. I know some may argue that roman numerals are also affected by position. I do agree with that to some extend. XI is eleven and IX is nine. That being said, if a smaller number is placed to the right of a bigger number, you must subtract the smaller number from the bigger number. For example, VI is six but IV is four (5-1).
+
+The principle in positional number systems is that, a digit's value increases its significance as it goes towards the left but decreases as it goes towards the right. For example, 100 is greater than 10 because of the position of '1' and also 0,001 is less than 1000 and less than 1,000 because of the position of '1'. The digit zero (0) is used to express nothing or emptiness. Zero is therefore used to hold places. If we want to move a digit's place, we simply fill the places in the opposite side of the digit with zeroes. For example, if we want '7' to occupy a 3rd place we use zeroes to hold the places to the right, and would write the number as 700. Moving a digit to the left in places increases its value while moving it to the right decreases its value. If we move that same '7' to the right by 3 places, it would be 0,07 which is less. Note how the zeroes are used to hold places.
+
+Since the decimal system uses 10 digits, each decimal place from the right actually has a value which is a power of 10. The first digit from the right has a power of 10^0 (10 to the power 0), the second digit, 10^1 (10 to the power 1), the third, 10^2 (10 to the power 2), etc. 10^0 = 1, 10^1 = 10, 10^2 = 100. We see that the third digit from the right has a power of hundreds, just see how we write a number to represent hundreds: 400. To simplify this convention, when ever a number is written in any positional number system (we normally use decimal or base 10), each position has a power and that power is used to determine the final value of the digit that sits in that position.
+
+For example 12345 is the same is:
+
+1 x (10^4) + 2 x (10^3) + 3 x (10^2) + 4 x (10^1) + 5 x (10^0)
+
+if you evaluate that expression it will give you the number 12345.
+
+I hope you notice that (in the decimal system or base 10) each numeric (nth) place from the right has a power of 10 to the power nth.
+
+Since computers also use two discrete signals, one to represent a 0 and another to represent a 1. We can use those signals to represent numbers, even large numbers. Two digits is all we need to represent numbers in a computer. With 2 digits, we can represent the numbers 0 and 1. Signals can be grouped to represent larger numbers beyond 0 and 1. If a computer generates 8 signals, and we group the 8 signals and treat them as a single number, we can come up with a number that ranges from 0 to 255. The first number possible would be 00000000, the second will be 00000001, 00000010, 00000011, 00000100, 00000101, 00000110, 00000111 and so on up to 11111111. We can come up with 256 different combinations using 8-signals. So if a computer understands a 0 and a 1 only, we can cause the computer to generate more of those 0s and 1s, and group to represent a single larger number. For example, if a computer generates 16 signals, if we treat them as a single number, we can come up with 65536 different combinations from those 16 signals hence that group of signals can represent a number with a value ranging from 0 to 65535. To avoid confusion, notice that from 0 to 65535, there are 65536 steps because zero is also a value, and it is inclusively counted.
+
+Lets go back a little... Lets say a computer sends 4 signals which represent a single number, and the signals are ON, OFF,ON, OFF or 1010, we can interpret the value by expanding the number like this:
+
+1 x (2^3) + 0 x (2^2) + 1 x (2^1) + 0 x (2^0)
+
+Expanding it gives us 8+0+2+0 = 10, in decimal or base 10
+
+When numbers are expressed in base 10, ten different digits (0-9) can be used to form numbers. When numbers are expressed in base 2, only 0 and 1 can be used to form numbers. Coincidentally, a computer can understand only 2 signals which can be translated to the numbers 0 and 1. Why 0 and 1 and not 1 and 2. Simply because in any positional numeral system, we need a digit that can represent nothing or empty. So we need a 0. We also need a digit that can represent singularity, that is the one. Out of 1, we can have 10 but out of 2 we can't have one. We can group 1s until they become ten but we can group 10s until they become a 1. That is why the signals are translated to 0 and 1 and not other values. So I hope you noticed how the base 2 number system is suitable to represent information that comes from a computer - A computer can distinguish between 2 kinds of signals which we can call 0 and 1, base 2 on the other hand is a number system that only uses the digits 0 and 1 to represent numbers. So we can easily translate computer signals into base 2 numbers. Base 2 is also called binary. "Deci" means 10, so decimal is base 10 - that is our normal number system. "bi" means 2 so binary is base 2. We also have unary which is base 1. It is also a number system although it is very limited. If you have used a tally, it is an example of a unary system. We also have base 8 which is called octal - remember "octo" means 8, which is why an octopus has 8 arms. In future we will learn about a base 16 number system used in scientific fields. Base 16 is also known as hexadecimal. If you split that word, "hexa" means 6 and "deci" (from decimal) means 10, hence hexadecimal is base 16. This system is very easy to use especially in computer programming. It uses the digits 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F. In this number system, 'FACE' is actually a number equal to 64206. We will talk about it in greater detail later.
+
+At the end of part 1, We gave a table like this:
+
+Human.........Computer
+
+0...................0
+1...................1
+2...................10
+3...................11
+4...................100
+5...................101
+6...................110
+7...................111
+8...................1000
+9...................1001
+10.................1010
+11.................1011
+12.................1100
+13.................1101
+14.................1110
+15.................1111
+
+The amount of information that a computer can hold at a time is limited. Computers have improved significantly over the years and the amount of information they can handle at a single moment has increased. When a computer is said to be 8-bits, it means that the computer can handle 8 BInary digiTs at a single moment. If you want to know the possible values of a single number a computer can hold at a time, given how many bits a computer can hold at a moment, simply raise 2 to the power nth, where nth is the number of bits the computer supports. For example, a 4-bit computer can carry up to 2^4 smile emoticon 16) different combinations of values. The table above shows you the values. In base 10, if our number could only be 2 digits, we can find out the number's possible values by raising 10^2=100. With 2 digits in base 10 we can have combinations from 0,1,2,3 up to 99. They are hundred possible values inclusive of the first 0. In base 2, we can find out a number's possible values by raising 2 to the power nth where nth is the number of bits (binary digits) the number has. A 7-bit number has 128 possible values (0-127).
+
+I hope you have understood at least a little on how computers perceive the world. When we think a computer is really interacting with us, it will be simply processing signals which are just a bunch of 0s and 1s if we were to express them in binary. Everything in computers eventually comes to 0s and 1s or electronic signals.
+
+If you have not understood these topics, please write to us so that we can try to come up with a simpler way of explaining. What I can say is that, this foundation is very important, because people who are failing to make it in computers are in that misfortune because they do not understand this solid foundation of computers. With this understanding you can become a computer engineer or a programmer, anything you want in computer science - this foundation makes it easy.
+
+In the next section we will look at how signals are transmitted, grouped and perfectly timed so that signals get to their destination when expected by the receiving device or component. Remember, there are only 2 kinds of signals, a 0 and a 1. If a receiving device gets a signal, that device must know what the signal means, so the signal must get to that device only when it is expected and on time. This creates a need to synchronize every device or component within a computer to make sure signals do not get lost or misinterpreted.
+
+Please like, and share, and also like our page..
+
+See you in the next part.
