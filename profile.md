@@ -41,8 +41,8 @@
 **Speciss College (2019 - Present)**  
 	**Roles**  
 	Computer Engineering Lecturer : 
-	-	Data security
-	-	Computer Programming (VB, Java, C#)
-	-	Network Technology
-	-	Software Development Techniques
+-	Data security
+-	Computer Programming (VB, Java, C#)
+-	Network Technology
+-	Software Development Techniques
 
