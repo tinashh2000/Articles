@@ -28,14 +28,21 @@
    
 **Paradise Property Group (2008 – 2010)**  
 	**Roles**   
-	Developing, updating and maintaining the company website  
-	Computer/IT related tasks  
-	Computer repairs  
+	-Developing, updating and maintaining the company website  
+	-Computer/IT related tasks  
+	-Computer repairs  
   
 **Faith World Ministries (2011 - 2018)**  
 	**Roles**  
-	Developing, updating and maintaining the organisation's website  
-	Computer/IT related tasks  
-	Musician (keyboard, guitar player)  
+	-Developing, updating and maintaining the organisation's website  
+	-Computer/IT related tasks  
+	-Musician (keyboard, guitar player)  
 
+**Speciss College (2019 - Present)**  
+	**Roles**  
+	Computer Engineering Lecturer : 
+	-	Data security
+	-	Computer Programming (VB, Java, C#)
+	-	Network Technology
+	-	Software Development Techniques
 
