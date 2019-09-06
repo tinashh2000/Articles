@@ -32,11 +32,15 @@
 -	Computer/IT related tasks  
 -	Computer repairs  
   
+  
+**Faith World Ministries (2008 - 2018)**  
+	**Roles**  
+-	Musician (keyboard, guitar player) 
+
 **Faith World Ministries (2011 - 2018)**  
 	**Roles**  
 -	Developing, updating and maintaining the organisation's website  
 -	Computer/IT related tasks  
--	Musician (keyboard, guitar player)  
 
 **Speciss College (2019 - Present)**  
 	**Roles**  
